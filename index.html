@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amor Doce - Cestas presenteáveis feitas com carinho e sofisticação.">
+    <title>Amor Doce - Cestas Presenteáveis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="topbar">
+        <a href="#topo" class="topbar-brand">
+            <img src="logo.jpg" alt="Amor Doce" class="topbar-logo">
+            <span>Amor Doce</span>
+        </a>
+        <div class="topbar-links">
+            <a href="#catalogo">Cestas</a>
+            <a href="#como-funciona">Como funciona</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#duvidas">Dúvidas</a>
+        </div>
+        <a href="#catalogo" class="topbar-cta" onclick="mudarAba('montar')">Monte a sua <span>+</span></a>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="topo">
+        <div class="hero-card">
+            <div class="hero-texto">
+                <span class="hero-selo">Feito à mão com amor</span>
+                <h1 class="hero-title">A arte de presentear <em>quem você ama.</em></h1>
+                <p class="hero-subtitle">Cestas presenteáveis feitas com carinho, ingredientes selecionados e muita sofisticação. Escolha pronta ou monte a sua.</p>
+                <div class="hero-botoes">
+                    <a href="#catalogo" class="btn btn-primario" onclick="mudarAba('prontas')">Ver cestas</a>
+                    <a href="#catalogo" class="btn btn-contorno" onclick="mudarAba('montar')">Montar a minha</a>
+                </div>
+                <div class="hero-mini">
+                    <div><strong>100%</strong><span>artesanal</span></div>
+                    <div><strong>+500</strong><span>cestas entregues</span></div>
+                    <div><strong>5★</strong><span>de carinho</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-blob"></div>
+                <img src="fotos/foto-principal.jpg" alt="Cesta Amor Doce" class="hero-foto">
+                <div class="hero-badge">Cestas<br>presenteáveis</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAIXA ROLANTE -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Café da manhã</span><i>✦</i><span>Aniversário</span><i>✦</i><span>Românticas</span><i>✦</i><span>Infantil</span><i>✦</i><span>Happy hour</span>
+        </div>
+    </div>
+
+    <!-- CATÁLOGO -->
+    <main class="container" id="catalogo">
+
+        <!-- MENU DE ABAS (segmentado) -->
+        <div id="menu-categorias" class="menu-elegante">
+            <button onclick="mudarAba('prontas')" class="aba-ativa">Coleção Pronta</button>
+            <button onclick="mudarAba('montar')">Monte a Sua</button>
+        </div>
+
+        <!-- SEÇÃO 1: CESTAS PRONTAS -->
+        <section id="secao-prontas">
+            <div class="section-header">
+                <span class="tag-destaque">Destaques</span>
+                <h2 class="section-title">Um pouco de tudo que <em>criamos com amor</em></h2>
+            </div>
+
+            <div class="filtros-categoria">
+    <button class="filtro-ativo" onclick="filtrarCategoria('todas', this)">
+        <span class="filtro-icone">✨</span><span class="filtro-nome">Todas</span>
+    </button>
+    <button onclick="filtrarCategoria('cafe', this)">
+        <span class="filtro-icone">☕</span><span class="filtro-nome">Café da Manhã</span>
+    </button>
+    <button onclick="filtrarCategoria('aniversario', this)">
+        <span class="filtro-icone">🎂</span><span class="filtro-nome">Aniversário</span>
+    </button>
+    <button onclick="filtrarCategoria('romantica', this)">
+        <span class="filtro-icone">💝</span><span class="filtro-nome">Românticas</span>
+    </button>
+    <button onclick="filtrarCategoria('infantil', this)">
+        <span class="filtro-icone">🧸</span><span class="filtro-nome">Infantil</span>
+    </button>
+    <!-- NOVO BOTÃO AQUI -->
+    <button onclick="filtrarCategoria('happyhour', this)">
+        <span class="filtro-icone">🍻</span><span class="filtro-nome">Happy Hour</span>
+    </button>
+    <button onclick="filtrarCategoria('natal', this)">
+        <span class="filtro-icone">🎄</span><span class="filtro-nome">Natal</span>
+    </button>
+</div>
+
+            <div id="vitrine-cestas" class="grid-cestas">
+                <!-- O JavaScript coloca os cartões aqui -->
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: MONTE SUA CESTA -->
+        <section id="secao-montar" style="display: none;">
+            <div class="section-header">
+                <span class="tag-destaque">Personalize</span>
+                <h2 class="section-title">Crie uma experiência <em>única</em></h2>
+            </div>
+
+            <div class="passo-card">
+                <div class="passo-topo"><span class="passo-num">1</span><h3>Escolha a Base</h3></div>
+                <div id="opcoes-recipiente" class="lista-opcoes"></div>
+            </div>
+
+            <div class="passo-card">
+                <div class="passo-topo"><span class="passo-num">2</span><h3>Selecione as Delícias</h3></div>
+                <div class="medidor" id="medidor">
+                    <div class="medidor-texto"><span>Espaço da cesta</span><strong id="medidor-valor">escolha a base primeiro</strong></div>
+                    <div class="medidor-barra"><div class="medidor-preench" id="medidor-preench"></div></div>
+                </div>
+                <div id="itens-avulsos" class="lista-opcoes"></div>
+            </div>
+
+            <div class="passo-card">
+                <div class="passo-topo"><span class="passo-num">3</span><h3>Mensagem Especial <small>(opcional)</small></h3></div>
+                <textarea placeholder="Escreva uma mensagem que irá na cartinha..."></textarea>
+            </div>
+        </section>
+    </main>
+
+    <!-- COMO FUNCIONA -->
+    <section class="como-funciona" id="como-funciona">
+        <div class="section-header">
+            <span class="tag-destaque tag-clara">Simples e rápido</span>
+            <h2 class="section-title">Como fazer o seu pedido</h2>
+        </div>
+        <div class="passos-grid">
+            <div class="passo-mini">
+                <span class="passo-mini-num">01</span>
+                <h3>Escolha</h3>
+                <p>Navegue pela coleção pronta ou monte uma cesta do seu jeito.</p>
+            </div>
+            <div class="passo-mini">
+                <span class="passo-mini-num">02</span>
+                <h3>Envie pelo WhatsApp</h3>
+                <p>Seu pedido já vai organizado, sem precisar digitar nada.</p>
+            </div>
+            <div class="passo-mini">
+                <span class="passo-mini-num">03</span>
+                <h3>Confirme com 50%</h3>
+                <p>Um sinal via Pix garante a confecção da sua cesta.</p>
+            </div>
+            <div class="passo-mini">
+                <span class="passo-mini-num">04</span>
+                <h3>Surpreenda</h3>
+                <p>Retire ou receba e encante quem você ama.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre-nos" id="sobre">
+        <div class="sobre-conteudo">
+            <span class="tag-destaque tag-clara">Nossa história</span>
+            <h2 class="sobre-titulo">Acreditamos que presentear é sobre aproximar corações em cada detalhe.</h2>
+            <p class="sobre-texto">A Amor Doce começou com uma paixão simples por ingredientes de qualidade e montagens belíssimas. Cada cesta é cuidadosamente preparada em nosso ateliê, trazendo um pouco de alegria e sofisticação para os momentos cotidianos e datas especiais de quem você ama.</p>
+        </div>
+        <div class="sobre-imagem">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop" alt="Detalhes da nossa produção" onerror="this.onerror=null;this.src='https://placehold.co/800x800/F6CFD3/8A1525?text=Nosso+Ateli%C3%AA'">
+        </div>
+    </section>
+
+    <!-- DÚVIDAS FREQUENTES -->
+    <section class="faq" id="duvidas">
+        <div class="section-header">
+            <span class="tag-destaque">FAQ</span>
+            <h2 class="section-title">Perguntas <em>frequentes</em></h2>
+        </div>
+        <div class="faq-lista">
+            <details>
+                <summary>Como funciona o pagamento?</summary>
+                <p>O pagamento é combinado direto no WhatsApp: Pix, cartão presencial ou dinheiro. Para confirmar a confecção, pedimos um sinal de 50% via Pix.</p>
+            </details>
+            <details>
+                <summary>Vocês fazem entrega?</summary>
+                <p>Sim! O valor da entrega varia conforme o bairro e é combinado no atendimento pelo WhatsApp. Também é possível retirar no ateliê.</p>
+            </details>
+            <details>
+                <summary>Posso trocar itens de uma cesta pronta?</summary>
+                <p>Pode sim. Basta avisar no WhatsApp qual item deseja trocar. Itens de categoria superior podem ter um pequeno acréscimo.</p>
+            </details>
+            <details>
+                <summary>Posso incluir uma cartinha?</summary>
+                <p>Com certeza. Na aba "Monte a Sua" você escreve a mensagem, ou combina com a gente pelo WhatsApp se pediu uma cesta pronta.</p>
+            </details>
+            <details>
+                <summary>Com quanto tempo de antecedência devo pedir?</summary>
+                <p>Quanto antes, melhor! Para datas comemorativas recomendamos pedir com alguns dias de antecedência.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer class="rodape">
+        <img src="logo.jpg" alt="Amor Doce" class="rodape-logo">
+        <p class="rodape-frase">Cestas presenteáveis feitas com amor.</p>
+        <p class="rodape-copy">© Amor Doce. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- BARRA FIXA DO PEDIDO (aparece na aba "Monte a Sua") -->
+    <div id="barra-inferior" class="barra-oculta">
+        <div class="barra-conteudo">
+            <div class="resumo-valores">
+                <span>Total da encomenda</span>
+                <strong id="valor-total">R$ 0,00</strong>
+            </div>
+            <button onclick="enviarPedidoPersonalizado()" class="btn-whatsapp">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 1 1 6.98 3.86zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
+                FINALIZAR PEDIDO
+            </button>
+            <p class="aviso-sinal"><small>*Pedidos exigem sinal de 50% para confirmação.</small></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
