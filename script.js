@@ -16,7 +16,8 @@ const nomesCategorias = {
     romantica: "Romântica",
     infantil: "Infantil",
     happyhour: "Happy Hour",
-    natal: "Natal"
+    natal: "Natal",
+    diadospais: "Dia dos Pais"
 };
 
 const catalogoCestasProntas = [
@@ -71,7 +72,7 @@ const catalogoCestasProntas = [
     {
         id: 7,
         nome: "Cesta Alegria em Dobro",
-        categoria: "romatica",
+        categoria: "romantica",
         precoBase: 125.00,
         descricao: "Cesta recheada com Nescau prontinho, mini bolo Bauducco, Fini Marshmallows, M&M's, barras Trento, Bis Xtra, caixas de Bis, pastilhas Mentos, bombons Sonho de Valsa e Ouro Branco.",
         imagem: "fotos/namorados3.png"
@@ -174,11 +175,131 @@ descricao: "Cesta com plaquinha de MDF 'Feliz Natal', mini Chocottone Bauducco, 
     },
     {
         id: 20,
-        nome: "Cesta Laços de Amor",
-        categoria: "natal",
-        precoBase: 185.00,
+        nome: "Cesta Snack Time",
+        categoria: "romantica",
+        precoBase: 175.00,
+        descricao: "Cesta em caixa preta com laço contendo batata Pringles Original, salgadinho Doritos Queijo Nacho, pote de Nutella, chocolates KitKat e Snickers.",
+        imagem: "fotos/namorados6.png"
+    },
+    {
+        id: 21,
+        nome: "Cesta Mix de Sabores",
+        categoria: "romantica",
+        precoBase: 175.00,
+        descricao: "Cesta em caixa preta com laço composta por salgadinho Doritos Queijo Nacho, batata Pringles Original, refrigerante Coca-Cola em lata, barra Galak e um pote de Nutella.",
+        imagem: "fotos/namorados7.png"
+    },
+    {
+        id: 22,
+        nome: "Cesta Ouro e Chocolate",
+        categoria: "romantica",
+        precoBase: 180.00,
+        descricao: "Cesta decorada com rosa vermelha contendo caixa de Ferrero Rocher, caixas de Bis, barras de chocolate Crunch e Lacta, chocolates Trento e diversos bombons Ouro Branco",
+        imagem: "fotos/namorados8.png"
+    },
+    {
+        id: 23,
+        nome: "Balde Petisco Heineken",
+        categoria: "diadospais",
+        precoBase: 150.00,
+        descricao: "Balde da marca Heineken recheado com 4 cervejas Heineken long neck, salgadinho Torcida Pimenta Mexicana, amendoim Pettiz, biscoitos salgados Elma Chips e chocolates Montevergine e Nestlé.",
+        imagem: "fotos/diadospais1.png"
+    },
+    {
+        id: 24,
+        nome: "Balde Budweiser & KitKat",
+        categoria: "diadospais",
+        precoBase: 120.00,
+        descricao: "Balde da marca Budweiser acompanhado de 3 cervejas Budweiser long neck, petiscos e chocolates KitKat Nestlé.",
+        imagem: "fotos/diadospais2.png"
+    },
+    {
+        id: 25,
+        nome: "Cesta Doce & Nutella",
+        categoria: "diadospais",
+        precoBase: 150.00,
+        descricao: "Cesta temática com pote de Nutella, bombons Ferrero Rocher e chocolates Talento.",
+        imagem: "fotos/diadospais3.png"
+    },
+    {
+        id: 26,
+        nome: "Cesta Clássicos & Cookies",
+        categoria: "diadospais",
+        precoBase: 175.00,
+        descricao: "Cesta recheada com cookies Bauducco, chocolates Talento, barras Prestígio, chocolates Lacta e petiscos.",
+        imagem: "fotos/diadospais4.png"
+    },
+    {
+        id: 27,
+        nome: "Balde Premium Heineken",
+        categoria: "diadospais",
+        precoBase: 180.00,
+        descricao: "Balde Heineken completo contendo cervejas Heineken long neck, batata Pringles Original e petiscos defumados.",
+        imagem: "fotos/diadospais5.png"
+    },
+    {
+        id: 28,
+        nome: "Cesta Chocolates Variados",
+        categoria: "diadospais",
+        precoBase: 180.00,
+        descricao: "Cesta com pote de Nutella, chocolates Montevergine de avelã, barras KitKat e chocolates Nestlé.",
+        imagem: "fotos/diadospais6.png"
+    },
+    {
+        id: 29,
+        nome: "Cesta Especial Avelã & Nutella",
+        categoria: "diadospais",
+        precoBase: 170.00,
         descricao: "Cesta com ursinho de pelúcia com coração, batata Lay's, barras de chocolate Diamante Negro e Lacta ao Leite, caixas de Bis e variados pacotes de balas Fini.",
-        imagem: "fotos/natal1.png"
+        imagem: "fotos/diadospais7.png"
+    },
+    {
+        id: 30,
+        nome: "Cesta Vinho & Ferrero",
+        categoria: "diadospais",
+        precoBase: 200.00,
+        descricao: "Cesta sofisticada contendo garrafa de vinho tinto Bella Vista, caixa de bombons Ferrero Rocher e palitinhos salgados caseiros Marquez.",
+        imagem: "fotos/diadospais8.png"
+    },
+    {
+        id: 31,
+        nome: "Balde Budweiser & Ouro Branco",
+        categoria: "diadospais",
+        precoBase: 100.00,
+        descricao: "Balde Budweiser contendo cervejas Budweiser long neck e diversos bombons Ouro Branco Lacta.",
+        imagem: "fotos/diadospais9.png"
+    },
+    {
+        id: 32,
+        nome: "Cesta Super Mix de Guloseimas",
+        categoria: "diadospais",
+        precoBase: 180.00,
+        descricao: "Cesta decorada com placa 'Eu te Amo' contendo batata Ruffles, caixas de Bis Lacta, barras de chocolate ao leite Lacta, KitKat Morango, Chokito, Stikadinho e bombons Sonho de Valsa.",
+        imagem: "fotos/diadospais10.png"
+    },
+    {
+        id: 33,
+        nome: "Kit Torcedor (Times)",
+        categoria: "diadospais",
+        precoBase: 115.00,
+        descricao: "Kit personalizado com o escudo do time (São Paulo, Palmeiras, Corinthians, entre outros), contendo caneca ou copo do clube, refrigerantes (Coca-Cola e Guaraná Antarctica Zero), amendoim Pettiz, chocolate Snickers e barra Talento.",
+        imagem: "fotos/diadospais11.png"
+    },
+    {
+        id: 30,
+        nome: "Cesta Especial Avelã & Nutella",
+        categoria: "diadospais",
+        precoBase: 170.00,
+        descricao: "Cesta com ursinho de pelúcia com coração, batata Lay's, barras de chocolate Diamante Negro e Lacta ao Leite, caixas de Bis e variados pacotes de balas Fini.",
+        imagem: "fotos/diadospais8.png"
+    },
+    {
+        id: 30,
+        nome: "Cesta Especial Avelã & Nutella",
+        categoria: "diadospais",
+        precoBase: 170.00,
+        descricao: "Cesta com ursinho de pelúcia com coração, batata Lay's, barras de chocolate Diamante Negro e Lacta ao Leite, caixas de Bis e variados pacotes de balas Fini.",
+        imagem: "fotos/diadospais8.png"
     },
 ];
 
