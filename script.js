@@ -6,7 +6,7 @@
 const configuracoes = {
     telefoneWhatsApp: "5544999062249",
     taxas: {
-        montagemPersonalizada: 25.00
+        montagemPersonalizada: 60.00
     }
 };
 
@@ -286,35 +286,136 @@ descricao: "Cesta com plaquinha de MDF 'Feliz Natal', mini Chocottone Bauducco, 
         imagem: "fotos/diadospais11.png"
     },
     {
-        id: 30,
-        nome: "Cesta Especial Avelã & Nutella",
-        categoria: "diadospais",
-        precoBase: 170.00,
-        descricao: "Cesta com ursinho de pelúcia com coração, batata Lay's, barras de chocolate Diamante Negro e Lacta ao Leite, caixas de Bis e variados pacotes de balas Fini.",
-        imagem: "fotos/diadospais8.png"
+        id: 34,
+        nome: "Cesta Despertar",
+        categoria: "cafe",
+        precoBase: 165.00,
+        descricao: "Cesta de vime decorada e balão metalizado de coração 'Parabéns', acompanhada de vasinho de flor kalanchoe amarela, pães frescos embalados, bandeja de frios (queijo e presunto fatiados), bebida láctea Alpino, suco de uva em caixinha, caixas de Bis, biscoitos e frutas frescas (maçã e uvas roxas).",
+        imagem: "fotos/1.png"
     },
     {
-        id: 30,
-        nome: "Cesta Especial Avelã & Nutella",
-        categoria: "diadospais",
-        precoBase: 170.00,
-        descricao: "Cesta com ursinho de pelúcia com coração, batata Lay's, barras de chocolate Diamante Negro e Lacta ao Leite, caixas de Bis e variados pacotes de balas Fini.",
-        imagem: "fotos/diadospais8.png"
+        id: 35,
+        nome: "Cesta Bom Dia Meu Amor",
+        categoria: "cafe",
+        precoBase: 160.00,
+        descricao: "Cesta decorada com laços e balão metalizado de coração 'Eu te amo', composta por pães frescos, biscoitos caseiros, bandeja de frios, pote de creme doce, suco de laranja, bebida láctea Friminho de morango, achocolatado Nescau, chocolates e frutas.",
+        imagem: "fotos/2.png"
     },
+    {
+        id: 36,
+        nome: "Cesta Encanto de Orquídea",
+        categoria: "cafe",
+        precoBase: 200.00,
+        descricao: "Cesta decorada com laços azul e dourado e uma orquídea branca natural, contendo pães doces trançados, bandeja de frios (queijo e presunto), caixa de brigadeiros, suco de uva Maguary, bebida láctea, biscoitos e frutas frescas",
+        imagem: "fotos/3.png"
+    },
+    {
+        id: 37,
+        nome: "Cesta Doce Manhã",
+        categoria: "cafe",
+        precoBase: 140.00,
+        descricao: "Cesta decorada com papel de seda, laço e vasinho de flores naturais, recheada com bolo caseiro de chocolate com cobertura, bandeja de frios (queijo e presunto), suco de laranja natural e bolinho.",
+        imagem: "fotos/4.png"
+    },
+    {
+        id: 38,
+        nome: "Cesta Café Completo & Guloseimas",
+        categoria: "cafe",
+        precoBase: 180.00,
+        descricao: "Cesta decorada com laço contendo caneca com sachê de cappuccino, pão doce trançado, pão de forma, bandeja de frios (queijo e presunto), pote de Nutella, achocolatado, suco de uva, bolinho, caixa de bombons, barra de chocolate e salgadinho.",
+        imagem: "fotos/5.png"
+    },
+    {
+        id: 39,
+        nome: "Cesta Manhã Florida",
+        categoria: "cafe",
+        precoBase: 145.00,
+        descricao: "Cesta decorada com laço e vasinho de flor, composta por pães frescos, bolo caseiro, bandeja de frios, suco de laranja, achocolatado, suco em caixinha e frutas frescas.",
+        imagem: "fotos/6.png"
+    },
+    {
+        id: 40,
+        nome: "Cesta Carinho Matinal",
+        categoria: "cafe",
+        precoBase: 165.00,
+        descricao: "Cesta de vime decorada acompanhada de ursinho de pelúcia, caneca com sachê de cappuccino, pães frescos, fatias de bolo caseiro, doces artesanais embalados e uma fruta.",
+        imagem: "fotos/7.png"
+    },
+    {
+        id: 41,
+        nome: "Cesta Bom Dia",
+        categoria: "cafe",
+        precoBase: 165.00,
+        descricao: "Cesta decorada com laço e cachorrinho de pelúcia, contendo pães frescos, requeijão cremoso, bebida láctea, suco de laranja, chocolates e frutas frescas.",
+        imagem: "fotos/8.png"
+    },
+    {
+        id: 42,
+        nome: "Bandeja Café da Manhã Duplo",
+        categoria: "cafe",
+        precoBase: 190.00,
+        descricao: "Bandeja de madeira contendo sucos de laranja, iogurtes gregos, biscoitos artesanais embalados, rocambole recheado, doce cremoso no pote com granulado, pão de mel embalado, barras de chocolate, bombons e frutas frescas",
+        imagem: "fotos/9.png"
+    },
+    {
+        id: 43,
+        nome: "Festa na caixa",
+        categoria: "aniversario",
+        precoBase: 190.00,
+        descricao: "Caixa decorada com laços, balão metalizado em formato de estrela personalizado e placa 'Parabéns', contendo mini bolo de chocolate com granulado e vela, brigadeiros tradicionais, bombons, salgadinhos variados, biscoitos recheados e refrigerante em lata.",
+        imagem: "fotos/aniversario1.png"
+    },
+    {
+        id: 44,
+        nome: "Festa na Caixa Feliz Aniversário",
+        categoria: "aniversario",
+        precoBase: 150.00,
+        descricao: "Caixa decorada contendo mini bolo confeitado com cobertura cremosa, morangos frescos e topo temático 'Feliz Aniversário!', salgadinhos fritos variados, docinhos (brigadeiros e beijinhos) e refrigerante em lata.",
+        imagem: "fotos/aniversario2.png"
+    },
+    
+    
 ];
 
 const recipientes = [
-    { id: 'cesta-m', nome: "Cesta de Vime Média", capacidade: 10, precoExtra: 0.00, icone: "🧺" },
-    { id: 'balde', nome: "Balde de Alumínio", capacidade: 6, precoExtra: 15.00, icone: "🪣" },
-    { id: 'caixa-mdf', nome: "Caixa MDF Decorada", capacidade: 8, precoExtra: 20.00, icone: "🎁" }
+    { id: 'cesta-p', nome: "Cesta de Vime Pequena", capacidade: 12, precoExtra: 13.00, icone: "🧺" },
+    { id: 'cesta-m', nome: "Cesta de Vime Média", capacidade: 18, precoExtra: 15.00, icone: "🧺" },
+    { id: 'cesta-g', nome: "Cesta de Vime Grande", capacidade: 26, precoExtra: 17.00, icone: "🧺" },
+    { id: 'balde', nome: "Balde de Cerveja", capacidade: 20, precoExtra: 30.00, icone: "🍿​" },
+    { id: 'bandeja-m', nome: "Bandeja MDF Média", capacidade: 15, precoExtra: 20.00, icone: "📥" },
+    { id: 'bandeja-g', nome: "Bandeja MDF Grande", capacidade: 22, precoExtra: 25.00, icone: "📥" }
 ];
 
 const itensAvulsos = [
-    { id: 'caneca', nome: "Caneca Personalizada", preco: 35.00, espaco: 2, icone: "☕" },
-    { id: 'nutella', nome: "Nutella 140g", preco: 18.00, espaco: 1, icone: "🍫" },
-    { id: 'pao-mel', nome: "Pão de Mel Artesanal", preco: 9.00, espaco: 1, icone: "🍯" },
-    { id: 'cerveja', nome: "Cerveja Long Neck", preco: 12.00, espaco: 1, icone: "🍺" },
-    { id: 'pelucia', nome: "Urso de Pelúcia P", preco: 45.00, espaco: 3, icone: "🧸" }
+    { id: 'cervejabud', nome: "Cerveja Budweiser Long Neck", preco: 7.00, espaco: 3, icone: "🍺" },
+    { id: 'cervejaheineken', nome: "Cerveja Heineken Long Neck", preco: 7.00, espaco: 3, icone: "🍺" },
+    { id: 'cervejalata', nome: "Cerveja Lata (Qualquer Marca)", preco: 5.00, espaco: 2, icone: "🍺" },
+    { id: 'refrilata', nome: "Refrigerante Lata (Qualquer Marca)", preco: 4.00, espaco: 2, icone: "🥤" },
+    { id: 'vinho', nome: "Vinho marca 'Reservado'", preco: 40.00, espaco: 5, icone: "🍷" },
+    { id: 'espumante', nome: "Espumante marca 'Del Sole'", preco: 25.00, espaco: 5, icone: "🍾" },
+    { id: 'amendoim', nome: "Amendoim 40g", preco: 5.00, espaco: 1, icone: "🥜" },
+    { id: 'torcida', nome: "Torcida 60g", preco: 5.00, espaco: 2, icone: "🥨" },
+    { id: 'batatapringles', nome: "Batata Pringles", preco: 13.00, espaco: 3, icone: "🥔" },
+    { id: 'salgadinho', nome: "Salgado Elma Chips Médio", preco: 15.00, espaco: 3, icone: "🧂" },
+    { id: 'bandejaamendoim', nome: "Bandeja de Amendoim Sortidos 240g", preco: 30.00, espaco: 3, icone: "🥜" },
+    { id: 'ferrerorocher3', nome: "Ferrero Rocher (3 unid)", preco: 13.00, espaco: 2, icone: "🍫" },
+    { id: 'ferreorocher8', nome: "Ferrero Rocher (8 unid)", preco: 35.00, espaco: 3, icone: "🍫" },
+    { id: 'nutella', nome: "Nutella 140g", preco: 15.00, espaco: 2, icone: "🍫" },
+    { id: 'caixabmbom', nome: "Caixa de Bombom", preco: 17.00, espaco: 4, icone: "🍬" },
+    { id: 'caixabis', nome: "Caixa de Bis", preco: 8.00, espaco: 2, icone: "🍫" },
+    { id: 'kitkat', nome: "Kit-Kat", preco: 5.00, espaco: 1, icone: "🍫" },
+    { id: 'canudo', nome: "Canudo de Chocolate", preco: 4.00, espaco: 1, icone: "🍫" },
+    { id: 'mm40', nome: "M&M 40g", preco: 6.00, espaco: 1, icone: "🍫" },
+    { id: 'mm132', nome: "M&M 132g", preco: 15.00, espaco: 2, icone: "🍫" },
+    { id: 'balafini', nome: "Bala Fini Tubes 15g", preco: 3.00, espaco: 1, icone: "🍬" },
+    { id: 'barrachocolate', nome: "Barra de Chocolate 80g (Qualquer marca)", preco: 10.00, espaco: 2, icone: "🍫" },
+    { id: 'copocerveja', nome: "Copo de Cerveja (Vidro)", preco: 15.00, espaco: 3, icone: "🍺" },
+    { id: 'tacavinho', nome: "Taça de Vinho (Vidro)", preco: 15.00, espaco: 3, icone: "🍷" },
+    { id: 'caneca', nome: "Caneca", preco: 20.00, espaco: 3, icone: "☕" },
+    { id: 'coracaopelucia', nome: "Coração de Pelúcia", preco: 25.00, espaco: 4, icone: "♥️" },
+    { id: 'pelucia', nome: "Urso de Pelúcia P", preco: 35.00, espaco: 4, icone: "🧸" },
+    { id: 'vasoflor', nome: "Vaso de Flor Kalanchoe", preco: 15.00, espaco: 4, icone: "🌼" },
+    { id: 'luminariaflor', nome: "Luminária de Cúpula de Flor", preco: 40.00, espaco: 4, icone: "🥀" }
 ];
 
 const imagemReserva = "https://placehold.co/600x600/F6CFD3/8A1525?text=Amor+Doce";
@@ -540,10 +641,10 @@ function calcularTotal() {
     const secaoMontar = document.getElementById('secao-montar');
 
     if (secaoMontar.style.display === 'block') {
-        total += configuracoes.taxas.montagemPersonalizada;
-
         const recipienteEscolhido = document.querySelector('input[name="escolha-recipiente"]:checked');
+        
         if (recipienteEscolhido) {
+            total += configuracoes.taxas.montagemPersonalizada;
             total += parseFloat(recipienteEscolhido.value);
         }
 
@@ -598,15 +699,15 @@ function enviarPedidoPersonalizado() {
     const telefone = configuracoes.telefoneWhatsApp;
 
     let texto = `Olá! Montei uma Cesta Personalizada no site:\n\n`;
-    texto += `🧺 *Recipiente:* ${nomeRecipiente}\n`;
-    texto += `🍫 *Itens:*\n${listaItens.join('\n')}\n\n`;
+    texto += ` *Recipiente:* ${nomeRecipiente}\n`;
+    texto += ` *Itens:*\n${listaItens.join('\n')}\n\n`;
 
     if (cartinha.trim() !== "") {
-        texto += `💌 *Cartinha:* "${cartinha}"\n\n`;
+        texto += ` *Cartinha:* "${cartinha}"\n\n`;
     }
 
-    texto += `💰 *Total da Encomenda:* ${total}\n`;
-    texto += `*(Inclui taxa de montagem de ${formatarMoeda(configuracoes.taxas.montagemPersonalizada)})*`;
+    texto += ` *Total da Encomenda:* ${total}\n`;
+    texto += `*(Valor final já inclui taxa de serviço, montagem e decoração)*`;
 
     window.open(`https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`, '_blank');
 }
