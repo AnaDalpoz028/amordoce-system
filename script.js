@@ -26,7 +26,7 @@ const catalogoCestasProntas = [
         nome: "Balde Heineken com aperitivo",
         categoria: "happyhour",
         precoBase: 155.00,
-        descricao: "Balde Heineken com 4 long necks, Pringles, Ferrero Rocher, amendoim e petiscos.",
+        descricao: "Balde Heineken com 5 long necks, Batata Pringles, Ferrero Rocher (3 unid) e Bandeja com Amendoins Sortidos 240g.",
         imagem: "fotos/fotobeer1.png"
     },
     {
@@ -34,7 +34,7 @@ const catalogoCestasProntas = [
         nome: "Balde Heineken com copo",
         categoria: "happyhour",
         precoBase: 125.00,
-        descricao: "Balde Heineken com 2 long necks, 1 lata, copo, Pringles e salgadinho.",
+        descricao: "Balde Heineken com 2 long necks, 2 latas, 1 Copo de Cerveja, Pringles e salgadinho.",
         imagem: "fotos/fotobeer2.png"
     },
     {
@@ -50,7 +50,7 @@ const catalogoCestasProntas = [
         nome: "Balde Budweiser ",
         categoria: "happyhour",
         precoBase: 155.00,
-        descricao: "Balde Budweiser com 4 long necks, Pringles, Ferrero Rocher, amendoim e petiscos.",
+        descricao: "Balde Budweiser com 5 long necks, Pringles, Ferrero Rocher (3 unid) e Bandeja com Amendoins Sortidos 240g.",
         imagem: "fotos/fotobeer4.png"
     },
     {
@@ -58,15 +58,15 @@ const catalogoCestasProntas = [
         nome: "Cesta Especialidades Doces",
         categoria: "romantica",
         precoBase: 190.00,
-        descricao: "Cesta decorada com flor contendo caixa Nestlé Especialidades, pote de Nutella, caixa de Ferrero Rocher, caixas de Bis e bombons Ouro Branco.",
+        descricao: "Cesta decorada com flor contendo caixa de bombom, Nutella 140g, caixa de Ferrero Rocher (8 unid), Canudo de Chocolate, caixa de Bis e bombons Ouro Branco e Sonho de valsa.",
         imagem: "fotos/namorados1.png"
     },
     {
         id: 6,
-        nome: "Cesta Doce Desejo",
+        nome: "Cesta Paixão em Vermelho",
         categoria: "romantica",
         precoBase: 145.00,
-        descricao: "Cesta contendo batata Pringles Original, barras Nestlé (Galak, Classic, Chokito, Suflair, Prestígio Branco), bombons Baton e diversos pacotes de balas Fini (Tubes, Amoras e outros).",
+        descricao: "Caixa de madeira decorada com laço e papel de seda, contendo caixa de Bombom, refrigerante em lata, chocolates KitKat, 3 barras de chocolate, bombons sortidos e 4 pacotes variados de balas Fini.",
         imagem: "fotos/namorados2.png"
     },
     {
@@ -74,7 +74,7 @@ const catalogoCestasProntas = [
         nome: "Cesta Alegria em Dobro",
         categoria: "romantica",
         precoBase: 125.00,
-        descricao: "Cesta recheada com Nescau prontinho, mini bolo Bauducco, Fini Marshmallows, M&M's, barras Trento, Bis Xtra, caixas de Bis, pastilhas Mentos, bombons Sonho de Valsa e Ouro Branco.",
+        descricao: "Cesta recheada com achocolatado, Bolinho, Marshmallows, M&M's, barras Trento, caixas de Bis, pastilhas Mentos, bombons Sonho de Valsa e Ouro Branco.",
         imagem: "fotos/namorados3.png"
     },
     {
@@ -82,7 +82,7 @@ const catalogoCestasProntas = [
         nome: "Cesta Laços de Amor",
         categoria: "romantica",
         precoBase: 185.00,
-        descricao: "Cesta com ursinho de pelúcia com coração, batata Lay's, barras de chocolate Diamante Negro e Lacta ao Leite, caixas de Bis e variados pacotes de balas Fini.",
+        descricao: "Cesta com ursinho de pelúcia com coração, Chips batata, barra de chocolate, balas Fini, bombons sortidos, Cúpula de Flor Luminária e Amendoim.",
         imagem: "fotos/namorados4.png"
     },
     {
@@ -90,7 +90,7 @@ const catalogoCestasProntas = [
         nome: "Cesta Romântica Amandita",
         categoria: "romantica",
         precoBase: 150.00,
-        descricao: "Cesta com coração de pelúcia 'Eu Te Amo', caixa de waffer Amandita, KitKat, barras Galak e Nestlé Classic, chocolates Prestígio e bombons Serenata de Amor.",
+        descricao: "Cesta com urso de pelúcia, 6 barras de chocolate e bombons sortidos.",
         imagem: "fotos/namorados5.png"
     },
     {
@@ -98,7 +98,7 @@ const catalogoCestasProntas = [
         nome: "Cesta Panettone",
         categoria: "natal",
         precoBase: 180.00,
-        descricao: "Cesta clássica contendo vinho tinto Chilano Cabernet Sauvignon, Panettone Bauducco e uma caixa de bombons Ferrero Rocher.",
+        descricao: "Cesta clássica contendo vinho, Panettone, Amendoim, pacote de mini torradas e Nutella 140g.",
         imagem: "fotos/natal1.png"
     },
     {
@@ -106,7 +106,7 @@ const catalogoCestasProntas = [
         nome: "Cesta Papai Noel",
         categoria: "natal",
         precoBase: 125.00,
-        descricao: "Cesta recheada com suco de uva integral Casa Madeira, torradas Triunfo, mini Panettone Bauducco, chocolates Planalto e canudos de wafer Look.",
+        descricao: "Cesta recheada com suco de uva, torradas, mini Panettone, mini bolinho, canudo de chocolate e bolacha recheada.",
         imagem: "fotos/natal2.png"
     },
     {
@@ -114,7 +114,7 @@ const catalogoCestasProntas = [
         nome: "Cesta Coração",
         categoria: "natal",
         precoBase: 130.00,
-        descricao: "Cesta em cachepô de madeira formato coração com caneca 'Merry Christmas', Pão de Mel Bauducco, barra Ouro Branco e outras barras de chocolate",
+        descricao: "Cesta com caneca de natal, Pão de Mel, chocolate Ouro Branco, Bolacha, Capuccino e balão de Coração",
         imagem: "fotos/natal3.png"
     },
     {
@@ -122,7 +122,7 @@ const catalogoCestasProntas = [
         nome: "Bandeja Natalina",
         categoria: "natal",
         precoBase: 130.00,
-        descricao: "Bandeja de MDF decorada contendo batata Pringles Original, barras de chocolate Nestlé Classic e Prestígio, chocolates Trento e biscoitos",
+        descricao: "Bandeja de MDF decorada contendo batata Pringles, chocolates sortidos e refirgerante lata",
         imagem: "fotos/natal4.png"
     },
     {
@@ -130,7 +130,7 @@ const catalogoCestasProntas = [
         nome: "Cesta festividades",
         categoria: "natal",
         precoBase: 145.00,
-        descricao: "Cesta com Panettone Festtone de frutas, refrigerante Coca-Cola em lata, biscoito Oreo, barra Diamante Negro e bombons Ouro Branco.",
+        descricao: "Cesta com Panettone, refrigerante em lata, biscoito recheado, barra de chocolate, Cockie, Salgado Elma Chips e bombons Ouro Branco.",
         imagem: "fotos/natal5.png"
     },
     {
@@ -138,7 +138,7 @@ const catalogoCestasProntas = [
         nome: "Cesta comemoração",
         categoria: "natal",
         precoBase: 210.00,
-        descricao: "Cesta premium com mini Chocottone Bauducco, caixa de wafer Amandita, caixa Nestlé Especialidades, caneca natalina, barra Lacta e cookies.",
+        descricao: "Cesta premium com mini Chocottone, caixa de wafer Amandita, Trufas, Bolachas, Espumante e mini panetone",
         imagem: "fotos/natal6.png"
     },
     {
